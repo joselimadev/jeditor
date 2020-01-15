@@ -52,14 +52,16 @@ export default {
 <style>
 .quill-editor,
 .quill-code {
-  width: 100%;
+  width: 50%;
   height: 90vh;
+  margin: auto;
 }
 
 .quill-code {
   height: auto;
   border: none;
 }
+
 .quill-code > .title {
   border: 1px solid #ccc;
   border-left: none;
@@ -67,5 +69,9 @@ export default {
   line-height: 3em;
   text-indent: 1rem;
   font-weight: bold;
+}
+
+.ql-container, .ql-toolbar {
+  background-color: #ffffff;
 }
 </style>
