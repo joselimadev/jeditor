@@ -29,16 +29,18 @@ export default {
               [{ font: [] }],
               [{ color: [] }, { background: [] }],
               [{ align: [] }],
+              ["emoji"],
               ["clean"],
               ["link", "image", "video"]
             ],
+            handlers: { emoji: () => {} }
           },
-          // plugin drag and drop  
           imageDrop: true,
-          // plugin resize
           imageResize: {
             modules: ["Resize", "DisplaySize", "Toolbar"]
           },
+          "emoji-toolbar": true,
+          "emoji-shortname": true
         }
       }
     };
