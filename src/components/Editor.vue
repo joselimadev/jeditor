@@ -31,12 +31,19 @@ export default {
               [{ align: [] }],
               ["clean"],
               ["link", "image", "video"]
-            ]
-          }
+            ],
+          },
+          // plugin drag and drop  
+          imageDrop: true,
+          // plugin resize
+          imageResize: {
+            modules: ["Resize", "DisplaySize", "Toolbar"]
+          },
         }
       }
     };
-  }
+  },
+  methods: {}
 };
 </script>
 
