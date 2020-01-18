@@ -8,6 +8,8 @@
 </template>
 
 <script>
+import hljs from "highlight.js";
+import "highlight.js/styles/monokai-sublime.css";
 export default {
   name: "Editor",
   data() {
@@ -35,6 +37,9 @@ export default {
             ],
             handlers: { emoji: () => {} }
           },
+          syntax: {
+            highlight: text => hljs.highlightAuto(text).value
+          },
           imageDrop: true,
           imageResize: {
             modules: ["Resize", "DisplaySize", "Toolbar"]
@@ -45,14 +50,15 @@ export default {
       }
     };
   },
-  methods: {}
+  methods: {
+  }
 };
 </script>
 
 <style>
 .quill-editor,
 .quill-code {
-  width: 50%;
+  width: 100%;
   height: 90vh;
   margin: auto;
 }
